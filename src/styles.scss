@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+   background: linear-gradient(to bottom, #0E4951, #000000); /* Degradado desde verde (#006400) hasta negro (#000000) */
+    /* Otros estilos para el cuerpo de tu página */
+    background-attachment: fixed; /* Esto asegura que el fondo se mantenga fijo mientras se desplaza la página */
+
+}

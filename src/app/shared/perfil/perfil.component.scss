@@ -1,0 +1,36 @@
+img{
+    width:187px;
+    height:188px;
+}
+h1{
+    font-size: 48px;
+    font-weight:bold;
+    text-align: center;
+    color:#d9d9d9;
+    padding-top: 2vh;
+}
+
+h3{
+    text-align: center;
+    color:#d9d9d9; 
+    margin-top:3vh;
+}
+button{
+    width: 290px;
+    height:56px;
+    background-color: #d9d9d963;
+    margin-bottom: 4rem;
+}
+.user-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .user-container img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .user-container img:hover {
+    filter: hue-rotate(120deg); /* Cambia el brillo al 120% */
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+  }
