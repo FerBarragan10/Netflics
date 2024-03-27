@@ -1,0 +1,26 @@
+
+
+
+<div class="grid grid-cols-4 gap-4 " style="margin-top:6rem"  (click)="comprarPlan()">
+    @for(plan of planes;track plan){
+    <ng-container style="width:256px;height:404px" >
+      <div class="flex justify-center items-center">
+        <div class="w-full max-w-sm p-4 bg-white shadow sm:p-6 md:p-8 dark:bg-gray-800" style="background-color: #d9d9d944; border-radius: 25px; width:256px;height:404px;">
+          <h1 class="titulo px-4" style="width:220px;height:39px">{{plan.titulo}}</h1>
+          <ul style="margin-top:2rem; margin-left:3rem">
+            <li>{{plan.item1}}</li>
+            <li>{{plan.item2}}</li>
+          </ul>        
+          <h1 class="precio" style="font-weight:bolder;font-size: 40px; margin-top:2rem">{{plan.precio}}</h1>
+        </div>
+      </div>
+    </ng-container>
+}
+  </div>
+
+
+  
+  
+  @if(mostrarAlerta){
+    <app-pop-up [message]="titulo" (close)="mostrarAlerta = false" ></app-pop-up>
+}
