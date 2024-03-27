@@ -1,1 +1,38 @@
-<p>pop-up works!</p>
+
+    
+
+
+
+
+    <div id="popup-modal" tabindex="-1" class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-50">
+        <div class="relative p-4 max-w-md">
+            <div style="width:577px;height:628px;border-radius:23px;background-color:#d9d9d9" class="relative bg-white rounded-lg shadow">
+                <button type="button" style="color:#0e4951" (click)="closeAlert()" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center">
+                    <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.29378 0L0.428711 5.75961L3.42364 8.70069L10.8278 16.0942L3.42364 23.3652L0.428711 26.1838L6.29378 32.0659L9.28871 29.1248L16.8176 21.7313L24.2218 29.1248L27.0919 32.0659L33.0818 26.1838L30.0868 23.3652L22.5579 16.0942L30.0868 8.70069L33.0818 5.75961L27.0919 0L24.2218 2.94108L16.8176 10.2121L9.28871 2.94108L6.29378 0Z" fill="#0E4951"/>
+                        </svg>                        
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="flex flex-col justify-center items-center h-full p-4 md:p-5 text-center">
+                   
+                    <svg  class="mb-8" width="147" height="133" viewBox="0 0 147 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M73.2653 0C32.9554 0 0.306152 29.7443 0.306152 66.4677C0.306152 103.191 32.9554 132.935 73.2653 132.935C113.575 132.935 146.225 103.191 146.225 66.4677C146.225 29.7443 113.575 0 73.2653 0ZM109.745 29.5781L122.878 41.5423L64.1454 95.0488L32.773 66.4677L45.9056 54.5035L64.1454 71.1204L109.745 29.5781Z" fill="#0E4951"/>
+                        </svg>
+                        
+                    <h3  class="mensaje mb-5 text-lg font-normal text-gray-500">{{message}}</h3>
+                    <div>
+                        <button style="text-align:center;font-size:32px;background-color: #0e4951;color:#ffffff;width:192px;height:47px;border-radius:23px" data-modal-hide="popup-modal" type="button" (click)="closeAlert()" class=" mt-5 text-center">
+                            Volver
+                        </button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+
+
+
+        
