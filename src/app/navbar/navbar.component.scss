@@ -30,3 +30,43 @@ a{
     top: 4rem;
     right: 5rem;  
 }
+
+.pelicula {
+    width: 65px;
+    height: 50px;
+    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor manteniendo su relación de aspecto */
+
+  }
+  
+  .lista {
+    position: absolute;
+    width: 138px;
+    height: 50px;
+    right: 3rem;
+    top: 89px;
+    color: #0e4951;
+    display: flex; /* Convertir el contenedor en un contenedor flexible */
+  }
+  
+  .lista2 {
+    position: absolute;
+    width: 138px;
+    height: 50px;
+    right: 3rem;
+    top: 10rem;
+    color: #0e4951;
+    display: flex; /* Convertir el contenedor en un contenedor flexible */
+  }
+  .info {
+    display: flex; /* Para alinear los elementos dentro de .lista */
+    flex-direction: column; /* Alinear los elementos en columna */
+    justify-content: center; /* Centrar verticalmente los elementos */
+    margin-left:5px;
+    font-size:12px;
+    white-space:nowrap;
+  }
+
+
+
+
+
