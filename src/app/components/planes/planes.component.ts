@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PlanComponent } from '../shared/plan/plan.component';
+import { PlanComponent } from '../../shared/plan/plan.component';
 
 @Component({
   selector: 'app-planes',

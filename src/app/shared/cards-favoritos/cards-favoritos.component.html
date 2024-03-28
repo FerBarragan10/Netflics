@@ -1,0 +1,106 @@
+<div  class="mx-2  relative w-full">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Cards -->
+        <div style="display: flex;justify-content:space-evenly;margin-left:5rem;padding-top:7rem"class="flex absolute top-0 left-0  transition-transform duration-700 ease-in-out">
+
+            @if(currentIndex === 1){
+            <div class="w- px-4 transform" data-card-index="1">
+                <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="../../../assets/cards/losSimpsons.jpg" style="width: 234px;height:152px;" class=" object-cover" alt="Card 1">
+                </div>
+            </div>
+            }
+        @if(currentIndex === 1){
+            <div class="w- px-4 transform" data-card-index="1">
+                <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="../../../assets/cards/avengers.jpg"  style="width: 234px;height:152px;"class= "object-cover" alt="Card 1">
+                </div>
+            </div>
+        }
+        
+            @if(currentIndex === 1){
+                <div class="w- px-4 transform" data-card-index="1">
+                    <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="../../../assets/cards/BetterCallSaul.jpg"  style="width: 234px;height:152px;" class="object-cover" alt="Card 1">
+                    </div>
+                </div>
+            }
+            @if(currentIndex === 1){
+                <div class="w- px-4 transform" data-card-index="1">
+                    <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="../../../assets/cards/laCasaDePapel.jpg" style="width: 234px;height:152px;" class="  object-cover" alt="Card 1">
+                    </div>
+                </div>
+            }
+            @if(currentIndex === 1){
+
+                <div class="w- px-4 transform" data-card-index="1">
+                    <div class="bg-gray-100 h-307 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="../../../assets/cards/elSeñorDeLosAnillos.jpg" style="width: 234px;height:152px;" class="  object-cover" alt="Card 1">
+                    </div>
+                </div>
+            }
+            @if(currentIndex === 2){
+            <div class="w-231 px-4 transform" data-card-index="6">
+                <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="../../../assets/cards/breakingBad.jpg"  style="width: 234px;height:152px;" class="  object-cover" alt="Card 6">
+                </div>
+            </div>
+        }
+        @if(currentIndex === 2){
+            <div class="w- px-4 transform" data-card-index="7">
+                  <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                      <img src="../../../assets/cards/elMarginal.jpg" style="width: 234px;height:152px;" class="  object-cover" alt="Card 7">
+                  </div>
+              </div>
+              }
+              @if(currentIndex === 2){
+  
+             <div class="w- px-4 transform" data-card-index="8">
+                  <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                      <img src="../../../assets/cards/harryPotter8.jpg" style="width: 234px;height:152px;" class="  object-cover" alt="Card 8">
+                  </div>
+              </div> 
+              }
+              @if(currentIndex === 2){
+              <div class="w- px-4 transform" data-card-index="9">
+                  <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                      <img src="../../../assets/cards/harryPotter2-a.jpg" style="width: 234px;height:152px;" class="  object-cover" alt="Card 9">
+                  </div>
+              </div>
+          }
+          @if(currentIndex === 2){
+            <div class="w- px-4 transform" data-card-index="9">
+                <div class="bg-gray-100 h-130 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="../../../assets/cards/joker.jpg" style="width: 234px;height:152px;" class="  object-cover" alt="Card 10">
+                </div>
+            </div>
+        }
+        </div>
+    </div>
+   
+    <div class="mx-10">
+        @if(currentIndex!==1){
+            <button type="button" style="position:absolute;" (click)="prev();"  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/0/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            }
+            @if(currentIndex!==2){
+            <button type="button" (click)="next();" style="position:absolute;" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/0/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+            }
+    </div>
+   
+</div>

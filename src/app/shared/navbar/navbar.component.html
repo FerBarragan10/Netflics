@@ -3,32 +3,14 @@
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="px-8 flex flex-wrap items-center justify-between mx-auto ">
     <a class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="../../assets/NetflicsLogo.png" class="logo  mr-4"  />
+        <img src="../../assets/NetflicsLogo.png"  (click)="irAlHome()" class="logo  mr-4"  />
     </a>
     <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      
-<!--<button type="button" class="relative inline-flex items-center p-3 text-sm font-medium text-center text-white ">
-  <svg width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <rect width="30" height="31" fill="url(#pattern0)"/>
-    <rect x="15" y="10" width="22" height="30" fill="url(#pattern1)"/>
-    <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-    <use xlink:href="#image0_268_1138" transform="matrix(0.0111111 0 0 0.0107527 0 0.016129)"/>
-    </pattern>
-    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-    <use xlink:href="#image1_268_1138" transform="matrix(0.0111111 0 0 0.00814815 0 0.133333)"/>
-    </pattern>
-    <image id="image0_268_1138" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEBklEQVR4nO2czYscRRjGX41oBFHwI37kpIL4J3gQwasHJR78AjUg4iWKCqIXRRE8xEPiRfGSPyH4OQQRFgVJNGpA2+7nKXZcWFAR/MDdRHFdLXmxB2TZ+erpmq6qfn9Qp57qnv7ts+90TVWNiGEYhmEYhmEYhmEYhhEFZVleC+BeAK+RPAFgleQvJLcA/E7yO5Jf18derqrqztXV1X2TzumcuwjAIyQ/IfkzybMATpF8XI9JXyjL8gqST9Q37+dtALYBfEDyYefcpf8/93A4vBrApxP6niG5X3KG5P46uWebCB7TNki+qMK993tInp7hD3Umy2QXRXEhgOdaFryz/QTg+ByvPyQ5UZblTQC+DCi4UQNwUnKB5AGSm11LHVdyJAdIHiT5VwRCx5YaSR0AT0Ugclrp+FhSBglIrttBSRUAT0cgcJY0n9QnIUkRpCP5lHPuKkkRpCP5uA5qJEWQTk1W0b8CuFJSg+RLXctrIPuwpIL3fg+AN7qW1lD0b8Ph8DKJnaIoLgfwXtfCFmyPScwAuBXAegSiFk31RxIj6+vrF9f1OOYh9Tyit/U/U2ICwF0kv+1aToB2t8RAVVW3k/wwAiE+UKpf6VQwyduaTjExoQbg3WB1FsCbAM7VsxGHd5vOqarqOpKuaxEM374KIlol73KxQV9lA/ixdcne+/MmzHTsKlsnUjOXvdG66FrcxoSL9k42gHOhRB+ZcvFeyUaI0qGoRJVpsjkSXUrg9RXvTJF9Ym1tbe/OvsP/VgB9k1GiwzzejbBkcyT6VQmNJZvLG4L3OdkA/p62IrVV+ppsdLGmo6fJPiRd0LNkb3Y6lVWvkn+/B8k+Il2jySb5dsbJ3tT3KTGQebKfkZjIUTaAL1ZWVi6Q2MisjGwAuFliJYdkA9jWLXMSO4skuyiKa/Rbsg4l/0PyUUmFVGUDeFZSol5r9+AMC2iiKSMAnpSUcM7dOMsmSUYkO0nJOuXT4GYHXclOTnK93ffzBW56sGzZyUlWnHMPtHDzg2XJTlKyMsPzs49FNoAXJFUa1mbfgezXJWVI/tlyDR0EkP1WsrusRpD8vmXRvs1Bje48iG4xeRNmmHHxY9oyBjVbzrlbJAdI3t9Q9EOh5yABPC+54L0/X7/DnVPyZ1ozA0/4uux+pofkDXM8ffygrx/1DSj7DskRANfPMEI8ra/b2TeA7IHkjJYRkvfVX5Xq79BtaYL1AxPAPXp8XN82Zes+x+A3mzLFAutGRo9+uoGpm3efGG7BZFual5RsY05M9hIpLNkmO0vcAh+QRhjZR+c9r9FM9qbu/t2tr9GibAB/TBp9Gi3JBnBs3nMZs8k+quVCk6ySi6K4ZFo/oyFak60uG4ZhGIZhGIYkz794Si+MqLidMgAAAABJRU5ErkJggg=="/>
-    <image id="image1_268_1138" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFp0lEQVR4nO2dW4xdUxjHF3Wpe13iWrcgwptbxC1KXF4IEiVxSVA8GElbDc/zpjw1TTwQTzwhKI1W9IVJgzBUNRKRTIdhjDNn7/9/7TkPOowu+TK7Ma29j2O6bvuc9U++l5mzz/nWL+vsvdZ3WUeppKSkpKSkpKSkpKSkpN5kjFmitb6K5CoAL5LcRPJbAGOY12xpojH5n7wGwAtyjdb6SnmPHj9usJRl2XKSa0huJlmQNAdpmuT7AFZnWXaWGmRNTEwcBeBhANsA/GUBbqUBmAPwEYCHxsfHl6pBUavVOlZmGslJV3C7QJ8mOQzgBNWvMsYcTvJZALlvwBXAxYd14pPqJwG4geSu0IArgH+vtb5FNV1yTyT5EoC9oaF2gS2+bTTGHKmaKJLnAfg8NEj2DvwrrfWFqkmSr6OlZZrxbLIsvFk1QSTvAfB7BNDMImf2rNb6fhWztNZPulwT0x9sGcMTKkaRvFs2B6Eh0SJsrfV9KibJfQ3AntBw6OY2cpuKQUVRXNTQB5/p0bTW+oKgkGXtKcuiCGAYxzN7NOg6WzYjoSHQn20Mtq2OecdH+7N6L4AbvUI2xhxGcmfowdO/7fIaiJIoXASDNoFsrc94chbBgE0Ik7ELA+egST4XaIBjJEcAvFvmEUdI/hwI+Dof6affPA7oG0m4dsv7ATgHwBDJ7zz69avTtJjk+DzNXvzf7a8x5hCSj/vaPAF40CXobR4GMAbg3MX6mGXZJT6+dQA+tEv3nwEsdx2ZA5DZCL6TvAzAH459nZuenj7DDt39nV/jYZY81W3tnuf5NVrrlQDu7HQ6p3Xztyyoce3v0y5Ab3bs+ITArIF2B8mfDpxRAF6dnJw8uuqaPM/Pdr1zlRWQi52gDhFLIHkTgD+7DPatOr9dB7zkoW21/KyshXP6NSR5bw3oz/7r2izLLq0B/aZrv7XWV1gDLWtZ1w7neX7tgZ8rt4Vevv5y364B/YqHCfKoNdBlVadThwG8AeDlhUby9R6vvb5mgrznwe/11kD7cJiLt8mqXZox5lCSUx5A23sgRh4SXVXls9b6dh+fD2CHTdA/RgDUVNhrXXze7gn0bmugIw2Lbq/L48lGwpcfANo2Qc9GANYsGNzXWusTq3wtiuJqn/5KmUVfgsb8JmRZlZ+dTudU3zFq26CziCo+T6rysSiKk8v4tW+f2n31MAQwKjBr/FsG4MtAfu3up+Xdp3V9JyXk0YATwOryblNAyCPtdvu4Kr9mZmZOCQm5BP1Oo7bgrLZP6iBLPLps5jSB7flGBZX4b/u4Lq1fJmR/iACy2CNNC5OaBbalLstcVq/ulwQIbJdbAy3BbQD05PgHdZAl8RqiEbTOhIn1vnPprfbg+NvGmCOqPl/u1QC+KLPkPZmkxxrzINynsq3YJegttgsIi6K42DHoIWVb7Xb7TMc9KsO2fXYJWli0Wq3TlQvJKQEJNPfB3uoEsoeSsOGGzegHlOPebldP/eEGgZ6Sgk/lUgNehG5Ke0a51tTU1DESGoxgsKavC9FFUog9wKBXK18qS8S8B9k5aM1CIilaSe1vniSFiRHMMuPJNqjALcpBA+/0YBJjqYvBeJM0pHso6TUBIUvU8nwVg0iuaPKpM+x+jMStKiYBuKsPD0ZZqWKUHI/TJ0f9zEkrnYpZ5ZE/jb2NANgT3RE/3Y7+aeIDEvMPvhWqSZKmzF76TxiJyTI1+JE+B7POlk0NIj5ApfRtQ/B1sq3tOsOXlVXZzjzPr1P9JDMfiFobQ4hVfJAoXF0DaV9oaj6eLRn1XwIAbkkmJ8uy49WgaHx8fKkcxSCnBLjc6JTvvVVyfAN19HyV5JQA6TuRVjJp+7UAF+V7DTkrCWi6jDFLpJ6N5GPSLCnVQFKDXFYf5Qt+HiQv/7ajfM166WKVa9PPgyQlJSUlJSUlJSUlJane9TfvM0pdaCiL8wAAAABJRU5ErkJggg=="/>
-    </defs>
-    </svg>-->
-    
-
 
     <button id="notificationButton" type="button"  (click)="openNotificaciones()" class="relative inline-flex items-center p-3 text-sm font-medium text-center text-white">
       <svg width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="30" height="31" fill="url(#pattern0)"/>
-        @if(clicked){
+        @if(clickedNumber){
           <rect x="15" y="10" width="22" height="30" fill="url(#pattern1)" id="patternRectangle"/>
         }
         <defs>
@@ -52,14 +34,14 @@
       </svg>
       <ul>
         <li class="lista">
-          <img class="pelicula" src="../../assets/topgun.jpg" alt="">
+          <img class="pelicula" src="../../../assets/notificaciones/topgun.jpg" alt="">
           <div class="info">
             <p>Estreno</p>
             <p>Top gun</p>
           </div>
         </li>
         <li class="lista2">
-          <img class="pelicula" src="../../assets/elEncargado.jpg" alt="">
+          <img class="pelicula" src="../../assets/notificaciones/elEncargado.jpg" alt="">
           <div class="info">
             <p>Estreno</p>
             <p>El encargado</p>
@@ -73,7 +55,7 @@
     
       <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
           <span class="sr-only">Open user menu</span>
-          <img class="w-8 h-8 rounded-full" src="../../assets/user1.jpg" alt="user photo">
+          <img class="w-8 h-8 rounded-full" src="../../../assets/users/user1.jpg" alt="user photo">
         </button>
         <!-- Dropdown menu -->
         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" style="width:128px;height:125" id="user-dropdown">

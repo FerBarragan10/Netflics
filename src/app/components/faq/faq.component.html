@@ -1,0 +1,37 @@
+<div>
+    <h1 style="color: #ffffff; font-weight:bold; font-size:64px; text-align:center;">Centro de ayuda</h1>
+
+    <form class="flex items-center">   
+        <div class="relative" style="margin: auto; text-align: center;">
+            <div class="relative flex items-center">
+                <input type="text" id="input-search" class="input-search bg-gray-50  text-white " placeholder="¿Como podemos ayudarte?"  />
+                <div class="absolute right-0 top-0 bottom-0 flex items-center pointer-events-none">
+                    <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <h2 style="color: #d9d9d9; font-weight:bold; font-size:30px;margin-top:3rem;margin-left:10rem">Preguntas Frecuentes </h2>
+    <div style="margin:auto;width:1117px;height:533px; background-color: #d9d9d9; border-radius: 30px;">
+        @for(pregunta of preguntas;track pregunta){
+            <div class="mt-8 py-1" style="white-space: nowrap; position: relative;">
+                <h1 class="titulo px-4" style="line-height:3rem; white-space: nowrap; font-size:50px; width:220px; height:39px;">{{pregunta.item}}</h1>
+                <div class="absolute" style="position: absolute; top: 0; right: 10px;">
+                    <svg style="display:inline-block" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1992 16.3208L19.9546 11.9011L10.0315 0.0384457L0.0172213 11.8243L3.73839 16.2728L9.9973 8.90663L16.1992 16.3208Z" fill="#0E4951"/>
+                    </svg>
+                </div>
+            </div>
+            
+            
+        }
+
+    </div>
+</div>
+
+
+
+

@@ -34,3 +34,16 @@ button{
     filter: hue-rotate(120deg); /* Cambia el brillo al 120% */
     transform: scale(1.1); /* Aumenta el tamaño al 110% */
   }
+
+
+  
+  
+ .contenedor img:hover {
+    content: url('../../../assets/icons/edit.svg');
+   
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease; 
+  }
+  
+  
