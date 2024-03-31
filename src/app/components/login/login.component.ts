@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent implements OnInit {
+  showSpinner: boolean=false;
 
 
 
@@ -22,8 +23,12 @@ export class LoginComponent implements OnInit {
   }
 
 
-  iniciarSesion(){
-    this.router.navigate(['/perfiles']);   
+  iniciarSesion() {
+    this.showSpinner=true;
+    setTimeout(() => {
+      this.showSpinner=false;
+      this.router.navigate(['/perfiles']);
+    }, 5000);
   }
 
 }
