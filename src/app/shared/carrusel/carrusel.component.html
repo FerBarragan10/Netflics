@@ -1,17 +1,20 @@
-<div id="default-carousel" class="relative w-full h-900" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div style="height:900px" class="relative overflow-hidden w-full">
-         <!-- Item 1 -->
-        <div class="duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../assets/carrusel/mandalorian.webp" style="width:2000px;height:900px" class="absolute block top-0 left-0" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../assets/carrusel/mrRobot.jpg" style="width:1900px;height:900px" class="absolute block bottom-8 top-0 left-0" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../assets/carrusel/losSimpsons.jpg" style="width:2000px;height:900px" class="absolute block top-0 left-0" alt="...">
+
+    <div id="default-carousel" #carousel class="relative w-full h-900" data-carousel="slide" style="position: relative;">
+        <div style="height:900px" class="relative overflow-hidden w-full">
+            <!-- Iterar sobre las series -->
+            @for(serie of series;track serie){
+                <div class="duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{serie.img}}"  class="absolute block top-0 left-0" >
+                    <!-- Detalles de la serie correspondiente -->
+                    <div  style="margin-bottom:12rem;"class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                        <h1 class="titulo" style="font-size:52px;font-weight:bold;">{{serie.titulo}}</h1>
+                        <p class="subtitulo" style="font-size:36px;font-weight:lighter;">{{serie.subtitulo}}</p>
+                        <p class="descripcion" style="width:640px;height:141px;font-size:24px;font-weight:lighter;">{{serie.item}}</p>
+                        <button  (click)="verAhora(serie)" style="border-radius:30px;width:323px;height:76px;background-color: #d9d9d9a1;color:#ffffff;font-size: 20px;font-weight:bold;margin-left: 6rem;">
+                            ver ahora
+                        </button>
+                    </div>
+                </div>
+            }
         </div>
     </div>
-</div>
