@@ -6,6 +6,10 @@ import { PlanesComponent } from './components/planes/planes.component';
 import { MiCuentaComponent } from './components/mi-cuenta/mi-cuenta.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { PeliculasComponent } from './components/peliculas/peliculas.component';
+import { SeriesComponent } from './components/series/series.component';
+import { FavoritosComponent } from './components/favoritos/favoritos.component';
+import { DetallesDePeliComponent } from './components/detalles-de-peli/detalles-de-peli.component';
 
 export const routes: Routes = [
 
@@ -16,6 +20,10 @@ export const routes: Routes = [
     { path: 'miCuenta', component: MiCuentaComponent},
     { path: 'ayuda', component: FaqComponent},
     { path: 'home', component: HomepageComponent},
+    { path: 'peliculas', component: PeliculasComponent},
+    { path: 'series', component: SeriesComponent},
+    { path: 'favoritos', component: FavoritosComponent},
+    { path: 'detalles-de-peli', component: DetallesDePeliComponent},
 
     { path: '', redirectTo: '/login', pathMatch: 'full' }
 

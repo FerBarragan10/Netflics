@@ -1,0 +1,19 @@
+.contenedor :hover{
+    border:4px solid grey;
+    transform: scale(1.1);
+    filter: hue-rotate(120deg); /* Cambia el brillo al 120% */
+    background-color: black; /* Cambia el color de fondo al pasar el cursor */
+    color: white; /* Cambia el color del texto al pasar el cursor */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Aplica una transición suave al color de fondo y al texto */
+}
+.contenedor p {
+    color: transparent; /* Oculta el título al principio */
+}
+
+/* Estilo para la tarjeta cuando se pasa el cursor sobre ella */
+
+
+/* Estilo para el título cuando se pasa el cursor sobre la tarjeta */
+.contenedor:hover p {
+    color: white; /* Cambia el color del texto al pasar el cursor */
+}
