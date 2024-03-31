@@ -1,17 +1,18 @@
 <div id="default-carousel" class="relative w-full">
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <div style="display: flex;justify-content:space-evenly;padding:7rem"class="flex  transition-transform duration-700 ease-in-out">        @for(pelicula of displayedMovies; track pelicula) {
+    <div style="display: flex; justify-content: space-evenly; padding: 7rem;" class="flex transition-transform duration-700 ease-in-out"> 
+        @for(pelicula of displayedMovies; track pelicula) {
             <ng-container>
-                <div class="w-231 px-4 transform">
-                    <div class="rounded-lg flex items-center justify-center overflow-hidden">
+                <div  class="w-231 px-4 transform">
+                    <div class="contenedor relative">
                         <img src="{{pelicula.imagen}}" class="w-60 h-80 object-cover" alt="{{pelicula.titulo}}">
-                        <p style="white-space: nowrap;">{{pelicula.titulo}}</p>
+                        <p class="titulo hidden absolute top-0 left-0 ">{{pelicula.titulo}}</p>
+                        <p class="item hidden absolute bottom-0 left-0  ">{{pelicula.item}}</p>
+
                     </div>
                 </div>
             </ng-container>
         }
     </div>
-   
     <!-- Slider controls -->
     @if(currentIndex!==1){
     <button type="button"  (click)="prev();"  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>

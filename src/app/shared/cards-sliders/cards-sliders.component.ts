@@ -23,39 +23,54 @@ export class CardsSlidersComponent implements OnInit{
         this.peliculas= [
           {
             "titulo": "Los Simpsons",
-            "imagen": "../../../assets/cards/losSimpsons.jpg"
+            "imagen": "../../../assets/cards/losSimpsons.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
           },
           {
             "titulo": "Better Call Saul",
-            "imagen": "../../../assets/cards/BetterCallSaul.jpg"
+            "imagen": "../../../assets/cards/BetterCallSaul.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+
           },
           {
             "titulo": "El Señor de los Anillos",
-            "imagen": "../../../assets/cards/elSeñorDeLosAnillos.jpg"
+            "imagen": "../../../assets/cards/elSeñorDeLosAnillos.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+
           },
           {
             "titulo": "Breaking Bad",
-            "imagen": "../../../assets/cards/breakingBad.jpg"
+            "imagen": "../../../assets/cards/breakingBad.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+
           },
           {
             "titulo": "Harry Potter",
-            "imagen": "../../../assets/cards/harryPotter8.jpg"
+            "imagen": "../../../assets/cards/harryPotter8.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+
           },
           {
             "titulo": "Avengers",
-            "imagen": "../../../assets/cards/avengers.jpg"
+            "imagen": "../../../assets/cards/avengers.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+
           },
           {
             "titulo": "Joker",
-            "imagen": "../../../assets/cards/joker.jpg"
+            "imagen": "../../../assets/cards/joker.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+
           },
           {
             "titulo": "It 2",
-            "imagen": "../../../assets/cards/it.jpg"
+            "imagen": "../../../assets/cards/it.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
           },
           {
             "titulo": "La monja",
-            "imagen": "../../../assets/cards/laMonja.jpg"
+            "imagen": "../../../assets/cards/laMonja.jpg",
+            "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
           },
       
         ]
