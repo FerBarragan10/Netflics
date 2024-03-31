@@ -11,6 +11,7 @@ import { Router, RouterModule } from '@angular/router';
 export class NavbarComponent {
   @ViewChild('patternRectangle') patternRectangle: ElementRef | undefined;
   clicked: boolean=true;
+  clickedUser:boolean=true;
   clickedNumber: boolean=true;
 
   constructor(private router:Router){
@@ -30,10 +31,26 @@ export class NavbarComponent {
     this.router.navigate(['/home'])
    }
 
+   irAPeliculas(){
+    this.router.navigate(['/peliculas']);
 
+   }
+   irASeries(){
+    this.router.navigate(['/series']);
+
+   }
+   irAFavoritos(){
+    this.router.navigate(['/favoritos']);
+
+   }
 
   openNotificaciones() {
    this.clicked=!this.clicked;
+   
    this.clickedNumber=false;
   }
+  openUser() {
+    this.clickedUser=!this.clickedUser;
+
+   }
 }

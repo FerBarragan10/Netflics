@@ -1,13 +1,13 @@
 
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 w-full z-50">
     <div class="px-8 flex flex-wrap items-center justify-between mx-auto ">
     <a class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="../../assets/NetflicsLogo.png"  (click)="irAlHome()" class="logo  mr-4"  />
     </a>
     <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
-    <button id="notificationButton" type="button"  (click)="openNotificaciones()" class="relative inline-flex items-center p-3 text-sm font-medium text-center text-white">
+    <button id="notificationButton" type="button"  (click)="openNotificaciones()"style="position: absolute;right:8rem" class="relative inline-flex items-center p-3 text-sm font-medium text-center text-white">
       <svg width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="30" height="31" fill="url(#pattern0)"/>
         @if(clickedNumber){
@@ -28,7 +28,7 @@
   <span class="sr-only">Notifications</span>
   </button>
   @if(!clicked){
-    <div style="width:184px;height:205px;background-color:#D9D9D9;"class="notificaciones" ></div>
+    <div style="border-radius:23px;width:184px;height:205px;background-color:#D9D9D9;z-index:1000"class="notificaciones" ></div>
     <svg   (click)="openNotificaciones()" class="icon"width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16.1992 16.3208L19.9546 11.9011L10.0315 0.0384457L0.0172213 11.8243L3.73839 16.2728L9.9973 8.90663L16.1992 16.3208Z" fill="#0E4951"/>
       </svg>
@@ -53,12 +53,12 @@
 
 
     
-      <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+     <!--  <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
           <span class="sr-only">Open user menu</span>
           <img class="w-8 h-8 rounded-full" src="../../../assets/users/user1.jpg" alt="user photo">
         </button>
-        <!-- Dropdown menu -->
-        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" style="width:128px;height:125" id="user-dropdown">
+        
+        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" style="width:128px;height:125;z-index:1000;" id="user-dropdown">
           <div class="px-4 py-3">
           <img src="../../assets/icons/arrowTop.png" style="fill:#0e4951;margin: auto;" alt="">
           </div>
@@ -76,7 +76,36 @@
               <a routerLink="/login" class="block py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Cerrar sesión</a>
             </li>
           </ul>
+        </div>-->
+
+        <button type="button" (click)="openUser()" >
+          <img class="w-8 h-8 rounded-full" src="../../../assets/users/user1.jpg" alt="user photo">
+        </button>
+        @if(!clickedUser){
+        <div class="dropdown-user" style="background-color:#D9D9D9 ;width:128px;height:125;">
+          <div class="">
+          <img src="../../assets/icons/arrowTop.png" style="fill:#0e4951;margin: auto;" alt="">
+          </div>
+          <ul class="py-2" aria-labelledby="user-menu-button">
+            <li>
+              <a routerLink="/miCuenta" class="block  py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Mi cuenta</a>
+            </li>
+            <li>
+              <a routerLink="/planes" class="block  py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white" >Planes</a>
+            </li>
+            <li>
+              <a routerLink="/ayuda" class="block  py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Ayuda</a>
+            </li>
+            <li>
+              <a routerLink="/login" class="block py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Cerrar sesión</a>
+            </li>
+          </ul>
         </div>
+      }
+
+
+
+
 
 
         
@@ -87,16 +116,16 @@
           </svg>
       </button>
     </div>
-    <div class=" px-8 " id="navbar-user" >
+    <div class=" px-8 " id="navbar-user"  >
       <ul class="flex flex-col font-medium p-4 md:p-0 mt-4  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
         <li>
-            <p>Series</p>
+            <p style="cursor: pointer;"(click)="irASeries()">Series</p>
         </li>
         <li>
-            <p>Peliculas</p>
+            <p style="cursor: pointer;"(click)="irAPeliculas()">Peliculas</p>
         </li>
         <li>
-            <p>Favoritos</p>
+            <p style="cursor: pointer;"(click)="irAFavoritos()">Favoritos</p>
         </li>
         <li>
             <p>Novedades</p>

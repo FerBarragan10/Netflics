@@ -3,7 +3,7 @@
     height:70px;
 }
 nav{
-    background-color: #d9d9d934;
+    background-color: #0e4951a6;
     height: 60px;
 }
 ul{
@@ -21,52 +21,67 @@ a{
     width: 184px;
     height: 205px;
     top: 60px;
-    right: 0.5rem;
+    right: 8rem;
+    z-index:1000
     
 }
 
 .icon{
-    position: fixed;
+    position: absolute;
     top: 4rem;
-    right: 5rem;  
+    right: 10rem;  
+    z-index:1000;
 }
 
 .pelicula {
     width: 65px;
     height: 50px;
     object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor manteniendo su relación de aspecto */
-
+    z-index:1000;
+    position: absolute;
+    right:8rem;
   }
   
   .lista {
     position: absolute;
     width: 138px;
     height: 50px;
-    right: 3rem;
+    right: 7rem;
     top: 89px;
+    z-index:1000;
     color: #0e4951;
     display: flex; /* Convertir el contenedor en un contenedor flexible */
+    z-index:1000;
   }
   
   .lista2 {
     position: absolute;
     width: 138px;
     height: 50px;
-    right: 3rem;
+    right: 7rem;
     top: 10rem;
     color: #0e4951;
     display: flex; /* Convertir el contenedor en un contenedor flexible */
+    z-index:1000;
   }
   .info {
     display: flex; /* Para alinear los elementos dentro de .lista */
     flex-direction: column; /* Alinear los elementos en columna */
     justify-content: center; /* Centrar verticalmente los elementos */
-    margin-left:5px;
+    margin-left:2rem;
     font-size:12px;
     white-space:nowrap;
+    z-index:1000;
   }
 
 
 
-
+.dropdown-user{
+  position: absolute;
+  width: 184px;
+  height: 205px;
+  top: 60px;
+  right: 0.5rem;
+  z-index:1000
+}
 
