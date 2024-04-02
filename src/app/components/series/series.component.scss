@@ -1,0 +1,45 @@
+
+
+
+.contenedor :hover{
+    filter: grayscale(100%);
+    color: white; /* Cambia el color del texto al pasar el cursor */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Aplica una transición suave al color de fondo y al texto */
+}
+
+.contenedor:hover .titulo {
+    color:beige;
+    transform: scale(1.1);
+    font-size: 16px;    
+    display: block;
+    font-weight: bolder;
+    position: absolute;
+    top:1rem;
+    left: 1rem;
+}
+.contenedor:hover .item {
+    transform: scale(1.1);
+
+    display: block;
+    color:beige;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bolder;
+    position: absolute;
+    bottom:2rem;
+}
+
+
+
+
+
+.contenedor:hover img {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+
+}
+img{
+    border-radius:23px;
+}
+
+

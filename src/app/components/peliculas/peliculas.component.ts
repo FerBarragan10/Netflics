@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { CardsSlidersComponent } from '../../shared/cards-sliders/cards-sliders.component';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from '../../shared/footer/footer.component';
 
 
 @Component({
   selector: 'app-peliculas',
   standalone: true,
-  imports: [CardsSlidersComponent,NavbarComponent,FormsModule],
+  imports: [CardsSlidersComponent,NavbarComponent,FormsModule,FooterComponent],
   templateUrl: './peliculas.component.html',
   styleUrl: './peliculas.component.scss'
 })

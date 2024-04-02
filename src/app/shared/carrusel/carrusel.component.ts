@@ -1,11 +1,10 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { InfoMovieComponent } from '../info-movie/info-movie.component';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-carrusel',
   standalone: true,
-  imports: [InfoMovieComponent],
+  imports: [],
   templateUrl: './carrusel.component.html',
   styleUrl: './carrusel.component.scss'
 })
@@ -32,26 +31,27 @@ export class CarruselComponent implements OnInit {
     // @ts-ignore
     this.series = [
       {
-          "titulo": "Mandalorian",
-          "subtitulo": "Serie, 1 temporada",
-          "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
-          "img": "../../../assets/carrusel/mandalorian.webp",
-          "trailer":"../../../assets/videos/mandalorian.mp4",
-          "capitulo":"../../../assets/videos/capituloMandalorian.mp4"
+          titulo: "Mandalorian",
+          subtitulo: "Serie, 1 temporada",
+          item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+          img: "../../../assets/carrusel/mandalorian.webp",
+          trailer:"../../../assets/videos/mandalorian.mp4",
+          capitulo:"../../../assets/videos/capituloMandalorian.mp4"
       },
       {
-          "titulo": "Mr Robot",
-          "subtitulo": "Serie, temp 2",
-          "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
-          "img": "../../../assets/carrusel/mrRobot.jpg"
+          titulo: "Mr Robot",
+          subtitulo: "Serie, temp 2",
+          item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+          img: "../../../assets/carrusel/mrRobot.jpg",
+          trailer:"https://www.youtube.com/watch?v=xIBiJ_SzJTA",
       },
       {
-          "titulo": "Los Simpsons",
-          "subtitulo": "Serie, 30 temporadas",
-          "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
-          "img": "../../../assets/carrusel/losSimpsons.jpg",
-          "trailer":"../../../assets/videos/intro.mp4",
-          "capitulo":"../../../assets/videos/capitulo.mp4"
+          titulo: "Los Simpsons",
+          subtitulo: "Serie, 30 temporadas",
+          item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
+          img: "../../../assets/carrusel/losSimpsons.jpg",
+          trailer:"../../../assets/videos/intro.mp4",
+          capitulo:"../../../assets/videos/capitulo.mp4"
       }
   ];
   

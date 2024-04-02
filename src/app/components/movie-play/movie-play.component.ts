@@ -1,11 +1,12 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FooterComponent } from '../../shared/footer/footer.component';
 
 @Component({
   selector: 'app-movie-play',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarComponent,FooterComponent],
   templateUrl: './movie-play.component.html',
   styleUrl: './movie-play.component.scss'
 })
@@ -42,10 +43,10 @@ export class MoviePlayComponent implements OnInit{
     // }
   }
   ngOnInit() { 
+    console.log(this.esTrailer)
      this.route.queryParams.subscribe(params => {
     this.esTrailer = params['isTrailer'];
-    console.log('es trailer', this.esTrailer);
-});
+  });
   
     this.data=localStorage.getItem('infoSerie');
     const serie = JSON.parse(this.data);
@@ -59,7 +60,7 @@ export class MoviePlayComponent implements OnInit{
   }
 
   irAtras(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['/detalles-de-peli']);
   }
 
 

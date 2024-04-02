@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { Router } from '@angular/router';
+import { FooterComponent } from '../../shared/footer/footer.component';
 
 @Component({
   selector: 'app-detalles-de-peli',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarComponent,FooterComponent],
   templateUrl: './detalles-de-peli.component.html',
   styleUrl: './detalles-de-peli.component.scss'
 })
