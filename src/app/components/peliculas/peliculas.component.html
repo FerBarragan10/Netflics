@@ -1,22 +1,50 @@
-<div>
-    <app-navbar></app-navbar>
-    <div class="mt-10 py-8">
-        <h1 style="text-align: center;font-size: 52px;color:#ffffff">Peliculas</h1>
 
-    </div>
-    <div>
-        <div>
-            <h3 style="color:#ffffff;margin-left:10rem;font-size: 30px;">Ciencia Ficción</h3>
-            <app-cards-sliders></app-cards-sliders>
-        </div>
-        <div>
-            <h3 style="color:#ffffff;margin-left:10rem;font-size: 30px;">Terror</h3>
-            <app-cards-sliders></app-cards-sliders>
-        </div>
-        <div>
-            <h3 style="color:#ffffff;margin-left:10rem;font-size: 30px;">Otros</h3>
-            <app-cards-sliders></app-cards-sliders>
-        </div>
 
+<app-navbar (searchEvent)="onSearch($event)"></app-navbar>
+
+
+<h1 style="margin-top:8rem;text-align: center;color:#ffffff ;font-size: 40px;font-weight: bolder;">Peliculas</h1>
+<div id="default-carousel" class="relative w-full">
+
+    <h3 style="margin-top:4rem;margin-left: 4rem;color:#ffffff ;font-size: 24px;font-weight: bolder;">Novedades</h3>
+    <div style="display: flex; justify-content: space-evenly; padding: 7rem;" class="flex transition-transform duration-700 ease-in-out"> 
+        @for(pelicula of displayedMovies; track pelicula) {
+            <ng-container>
+                <div  class="w-231 px-4 transform">
+                    <div class="contenedor relative">
+                        <img src="{{pelicula.imagen}}" class="w-60 h-80 object-cover" alt="{{pelicula.titulo}}">
+                        <p class="titulo hidden absolute top-0 left-0 ">{{pelicula.titulo}}</p>
+                        <p class="item hidden absolute bottom-0 left-0  ">{{pelicula.item}}</p>
+
+                    </div>
+                </div>
+            </ng-container>
+        }
     </div>
+    <!-- Slider controls -->
+    @if(currentIndex!==1){
+    <button type="button"  (click)="prev();"  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    }
+    @if(currentIndex!==7){
+    <button type="button" (click)="next();" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+    }
 </div>
+
+
+<app-cards-sliders [titulo]="titulo"></app-cards-sliders>
+
+<app-cards-sliders [titulo]="titulo2"></app-cards-sliders>
