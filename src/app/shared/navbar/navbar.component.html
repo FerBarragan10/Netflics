@@ -50,34 +50,6 @@
       </ul>
       
 }
-
-
-    
-     <!--  <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
-          <span class="sr-only">Open user menu</span>
-          <img class="w-8 h-8 rounded-full" src="../../../assets/users/user1.jpg" alt="user photo">
-        </button>
-        
-        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" style="width:128px;height:125;z-index:1000;" id="user-dropdown">
-          <div class="px-4 py-3">
-          <img src="../../assets/icons/arrowTop.png" style="fill:#0e4951;margin: auto;" alt="">
-          </div>
-          <ul class="py-2" aria-labelledby="user-menu-button">
-            <li>
-              <a routerLink="/miCuenta" class="block  py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Mi cuenta</a>
-            </li>
-            <li>
-              <a routerLink="/planes" class="block  py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white" >Planes</a>
-            </li>
-            <li>
-              <a routerLink="/ayuda" class="block  py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Ayuda</a>
-            </li>
-            <li>
-              <a routerLink="/login" class="block py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Cerrar sesión</a>
-            </li>
-          </ul>
-        </div>-->
-
         <button type="button" (click)="openUser()" >
           <img class="w-8 h-8 rounded-full" src="../../../assets/users/user1.jpg" alt="user photo">
         </button>
@@ -103,12 +75,6 @@
         </div>
       }
 
-
-
-
-
-
-        
         <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -127,10 +93,23 @@
         <li>
             <p style="cursor: pointer;"(click)="irAFavoritos()">Favoritos</p>
         </li>
-        <li>
-            <p>Novedades</p>
-        </li>
       </ul>
+    </div>
+
+    <div class="search-container">
+      <input style="width:288px;height:30px; border-radius: 30px; background-color: #D9D9D9;" 
+      (input)="busqueda()"
+      [(ngModel)]="searchText" 
+      type="text"  
+      autocomplete="off"
+            placeholder="Título, género o año">
+
+
+
+
+            <svg class="search-icon" width="20" height="17" viewBox="0 0 20 17"  stroke="#0e4951" fill="" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.125 14.2109L13.2781 10.0904C14.0592 9.17805 14.4794 8.07846 14.4781 6.95008C14.4781 3.99666 11.6512 1.59375 8.17656 1.59375C4.70195 1.59375 1.875 3.99666 1.875 6.95008C1.875 9.9035 4.70195 12.3064 8.17656 12.3064C9.50407 12.3075 10.7977 11.9503 11.8711 11.2864L16.7188 15.4062L18.125 14.2109ZM8.17656 10.6147C7.32375 10.6148 6.49007 10.3999 5.78095 9.99719C5.07183 9.5945 4.51913 9.02212 4.19274 8.35242C3.86635 7.68272 3.78093 6.94579 3.94728 6.23483C4.11364 5.52387 4.5243 4.8708 5.12733 4.35823C5.73035 3.84565 6.49866 3.49659 7.33509 3.35519C8.17152 3.21379 9.0385 3.28639 9.82638 3.56383C10.6143 3.84126 11.2877 4.31106 11.7614 4.91381C12.2351 5.51656 12.488 6.22519 12.4879 6.95008C12.4865 7.92165 12.0319 8.8531 11.2236 9.5401C10.4154 10.2271 9.31959 10.6136 8.17656 10.6147Z" fill="black" fill-opacity="0.36"/>
+      </svg>
     </div>
     </div>
   </nav>

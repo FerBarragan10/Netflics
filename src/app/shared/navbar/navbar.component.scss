@@ -85,3 +85,13 @@ a{
   z-index:1000
 }
 
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Ajusta el valor según sea necesario */
+  transform: translateY(-50%);
+}

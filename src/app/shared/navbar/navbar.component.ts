@@ -1,15 +1,21 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild,EventEmitter, Output } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule,FormsModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  searchText: string = '';
+
   @ViewChild('patternRectangle') patternRectangle: ElementRef | undefined;
+  @Output() searchEvent = new EventEmitter<string>();
+
+
+
   clicked: boolean=true;
   clickedUser:boolean=true;
   clickedNumber: boolean=true;
@@ -53,4 +59,9 @@ export class NavbarComponent {
     this.clickedUser=!this.clickedUser;
 
    }
+   busqueda(){
+    console.log(this.searchText);
+    this.searchEvent.emit(this.searchText);
+
+  }
 }
