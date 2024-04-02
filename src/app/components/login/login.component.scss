@@ -6,10 +6,11 @@
     border:1px solid transparent;
 } 
 .spinner{
-    width:200px;
-    height:200px;
+    width:100px;
+    height:100px;
     position:absolute;
     bottom:4rem;
+
     left: 45%; transform: translate(-50%, -50%);
     animation: spin 2s linear infinite; /* Animación de rotación */
 }

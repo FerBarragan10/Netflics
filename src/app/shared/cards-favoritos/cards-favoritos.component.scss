@@ -1,41 +1,38 @@
+.contenedor {
+    position: relative; /* Importante para posicionar elementos hijos absolutos */
+}
 
-
-
-.contenedor :hover{
+.contenedor:hover {
     filter: grayscale(100%);
-    color: white; /* Cambia el color del texto al pasar el cursor */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Aplica una transición suave al color de fondo y al texto */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .contenedor:hover .titulo {
-    color:beige;
+    color: beige;
     transform: scale(1.1);
-    font-size: 16px;    
+    font-size: 14px;
     display: block;
     font-weight: bolder;
     position: absolute;
-    top:1rem;
-    left: 1rem;
+    top: 1rem;
+    left: 2rem;
 }
+
 .contenedor:hover .item {
     transform: scale(1.1);
-
     display: block;
-    color:beige;
+    color: beige;
     font-size: 8px;
     text-align: center;
     font-weight: bolder;
-    position: absolute;
-    bottom:0.5rem;
+    
 }
-
 
 
 
 
 .contenedor:hover img {
     filter: grayscale(100%);
-    transform: scale(1.1);
 
 }
 

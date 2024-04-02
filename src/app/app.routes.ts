@@ -10,6 +10,7 @@ import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { SeriesComponent } from './components/series/series.component';
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { DetallesDePeliComponent } from './components/detalles-de-peli/detalles-de-peli.component';
+import { MoviePlayComponent } from './components/movie-play/movie-play.component';
 
 export const routes: Routes = [
 
@@ -24,6 +25,8 @@ export const routes: Routes = [
     { path: 'series', component: SeriesComponent},
     { path: 'favoritos', component: FavoritosComponent},
     { path: 'detalles-de-peli', component: DetallesDePeliComponent},
+    { path: 'movie-play', component: MoviePlayComponent},
+
 
     { path: '', redirectTo: '/login', pathMatch: 'full' }
 

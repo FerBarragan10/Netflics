@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-cards-sliders',
@@ -11,9 +11,12 @@ export class CardsSlidersComponent implements OnInit{
   currentIndex: number = 1; // Índice actual del card
   peliculas: any[] = []; // Tu arreglo de películas
   displayedMovies: any[] = [];
+  @Input() titulo="";
+  @Input() titulo2="";
  
   
     ngOnInit(): void {
+      console.log(this.titulo);
       this.cargarArrayPeliculas();
       this.updateDisplayedMovies();
     }
@@ -74,6 +77,7 @@ export class CardsSlidersComponent implements OnInit{
           },
       
         ]
+
       }
 
   
@@ -96,6 +100,9 @@ export class CardsSlidersComponent implements OnInit{
         this.updateDisplayedMovies();
       }
     }
+
+
+
   }
   
 

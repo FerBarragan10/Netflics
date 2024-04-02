@@ -35,7 +35,9 @@ export class CarruselComponent implements OnInit {
           "titulo": "Mandalorian",
           "subtitulo": "Serie, 1 temporada",
           "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
-          "img": "../../../assets/carrusel/mandalorian.webp"
+          "img": "../../../assets/carrusel/mandalorian.webp",
+          "trailer":"../../../assets/videos/mandalorian.mp4",
+          "capitulo":"../../../assets/videos/capituloMandalorian.mp4"
       },
       {
           "titulo": "Mr Robot",
@@ -47,7 +49,9 @@ export class CarruselComponent implements OnInit {
           "titulo": "Los Simpsons",
           "subtitulo": "Serie, 30 temporadas",
           "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
-          "img": "../../../assets/carrusel/losSimpsons.jpg"
+          "img": "../../../assets/carrusel/losSimpsons.jpg",
+          "trailer":"../../../assets/videos/intro.mp4",
+          "capitulo":"../../../assets/videos/capitulo.mp4"
       }
   ];
   

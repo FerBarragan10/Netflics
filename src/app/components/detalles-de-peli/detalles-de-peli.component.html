@@ -3,14 +3,14 @@
     <img src="{{imagen}}" alt="">
     <h1 style="font-size:64px;font-weight: bold; color:beige;position: absolute;top:6rem;margin-left: 5rem;">{{titulo}}</h1>
     <div>
-        <button style="background-color:#d9d9d9b2; width:240px;height:72px;color:#ffffff;font-size:32px;position: absolute;border-radius:23px;bottom:15rem;margin-left: 5rem;">
+        <button   (click)="verPeli()"style="background-color:#d9d9d9b2; width:240px;height:72px;color:#ffffff;font-size:32px;position: absolute;border-radius:23px;bottom:15rem;margin-left: 5rem;">
             <svg style="position:absolute;top:50%;transform:translateY(-50%);left:1.4rem" width="21" height="19" viewBox="0 0 21 19" fill="black" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.980713 0.916016V18.8594L20.974 9.8877L0.980713 0.916016Z" fill="#ffffff"/>
             </svg>
             Ver ahora
         </button>
         
-        <button style="background-color:#494949; width:155px;height:72px;color:#ffffff;font-size:32px;position: absolute;border-radius:23px;bottom:15rem;margin-left: 23rem;">
+        <button  (click)="verTrailer()" style="background-color:#494949; width:155px;height:72px;color:#ffffff;font-size:32px;position: absolute;border-radius:23px;bottom:15rem;margin-left: 23rem;">
             Trailer
         </button>        
         <div style="color:#ffffff;font-size:32px;position: absolute;border-radius:23px;bottom:15rem;margin-left: 35rem;">
@@ -23,7 +23,7 @@
         <div style="position: absolute;bottom:6rem;margin-left: 5rem;">
            
                 
-            <h4 style="width:1060px;height:102px; font-size:24px;font-weight: bold; color:#d9d9d9;">{{item}}</h4>
+            <h4 style="width:1060px;height:102px; font-size:24px;font-weight: bold; color:#ffffff;">{{item}}</h4>
         </div>
     </div>
 </div>

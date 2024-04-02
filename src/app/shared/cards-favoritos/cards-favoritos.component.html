@@ -3,14 +3,13 @@
         <div style="display: flex;justify-content:space-evenly;padding:7rem"class="flex  transition-transform duration-700 ease-in-out">
             @for(pelicula of displayedMovies;track pelicula){
                 <ng-container >
-                    <div class=" contenedor  px-4 transform">
-                        <div class="bg-gray-100 h-307 rounded-lg flex items-center justify-center overflow-hidden">
-                            <img src="{{pelicula.imagen}}"  style="width:234px;height:139px;"class="object-cover" alt="{{pelicula.titulo}}">
-                            <p class="titulo hidden absolute top-0 left-0 ">{{pelicula.titulo}}</p>
-                            <p class="item hidden absolute bottom-0 left-0  ">{{pelicula.item}}</p>
-    
-                        </div>
-                    </div>
+                  <div class="contenedor px-4 transform">
+    <div class="rounded-lg flex items-center justify-center overflow-hidden">
+        <img src="{{pelicula.imagen}}" style="width: 234px; height: 139px;" class="object-cover" alt="{{pelicula.titulo}}">
+        <p class="titulo hidden absolute top-5 left-3">{{pelicula.titulo}}</p>
+    </div>
+</div>
+
                 </ng-container>
                 }    
         </div>
