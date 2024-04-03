@@ -1,1 +1,41 @@
-<p>create-account works!</p>
+<div class="flex justify-center items-center ">
+    <img src="../../assets/NetflicsLogo.png" style="height:186px;width: 166px;" alt="">
+</div>
+<div class="flex justify-center items-center" >
+    <div class="w-full max-w-sm p-4 bg-white shadow sm:p-6 md:p-8 dark:bg-gray-800" style="background-color: #17353b9c; border-radius: 25px;">
+        <form class="space-y-6"  >
+            <h1 style="color: #fafafa7c;" class="text-3xl font-medium text-center">Registro usuario</h1>
+            <div>
+                <label style="color: #FAFAFA;" for="nombre" class="block mb-2 text-sm font-sm text-gray-900 dark:text-white">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="input  bg-yellow-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder=""  />
+            </div>
+            <div>
+                <label style="color: #FAFAFA;" for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                <input type="email" name="email"  id="email"  class="input bg-yellow-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"  />
+            </div>
+            <div>
+                <label style="color: #FAFAFA;" for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                <input type="password" name="password"  id="password"  class="input bg-yellow-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"  />
+            </div>
+            <div class="flex items-start">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value="" class="checkbox w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
+                    </div>
+                    <label style="color:#d9d9d9;font-size: 10px;"for="remember" >Sí, me gustaría recibir comunicaciones de marketing, novedades y actualizaciones, ofertas especiales y otra información de Netflics.</label>
+                </div>
+               
+            </div>
+            <div class="flex items-start" style="width:312px;height: 22px;">
+                <label style="color:#d9d9d9;font-size: 10px;"for="remember" >Presionando "Aceptar y Continuar", usted confirma que ha leído y esta de acuerdo con los Términos de Uso y acepta nuestra Política de Privacidad.</label>
+
+            </div>
+            <div style="text-align: center;">
+                <button   (click)="CrearCuentayVueltaLogin()" style="background-color: #d9d9d980;height:60px;width:250px;border-radius: 20px"class="w-full text-white bg-blue-700  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  ">Aceptar y continuar</button>
+              
+            </div>
+           
+        </form>
+    </div>
+</div>
+

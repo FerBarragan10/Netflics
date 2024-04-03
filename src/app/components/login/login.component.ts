@@ -23,16 +23,15 @@ export class LoginComponent implements OnInit {
   }
 
 
-  iniciarSesion(): void {
-    // Mostrar el spinner al iniciar sesión
+  crearCuenta(){
+    this.router.navigate(['/create-account']);
+  }
+
+  iniciarSesion(){
     this.showSpinner = true;
 
-    // Simular un proceso de inicio de sesión con un retardo de 5 segundos
     setTimeout(() => {
-      // Ocultar el spinner después de 5 segundos
-      this.showSpinner = false;
-
-      // Redirigir a la página de perfiles después de iniciar sesión
+      
       this.router.navigate(['/perfiles']);
     }, 5000);
 }

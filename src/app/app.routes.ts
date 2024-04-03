@@ -15,7 +15,7 @@ import { MoviePlayComponent } from './components/movie-play/movie-play.component
 export const routes: Routes = [
 
     { path: 'login', component: LoginComponent },
-    { path: 'create', component: CreateAccountComponent },
+    { path: 'create-account', component: CreateAccountComponent },
     { path: 'perfiles', component: PerfilesComponent},
     { path: 'planes', component: PlanesComponent},
     { path: 'miCuenta', component: MiCuentaComponent},

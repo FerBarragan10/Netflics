@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-account',
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './create-account.component.scss'
 })
 export class CreateAccountComponent {
+  constructor(private router:Router){
+
+  }
+  CrearCuentayVueltaLogin(){
+    
+    this.router.navigate(['/login']);
+  }
 
 }
