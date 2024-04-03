@@ -43,8 +43,10 @@ export class CarruselComponent implements OnInit {
           subtitulo: "Serie, temp 2",
           item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.",
           img: "../../../assets/carrusel/mrRobot.jpg",
-          trailer:"https://www.youtube.com/watch?v=xIBiJ_SzJTA",
+          trailer:"../../../assets/videos/mrRobot.mp4",
+          capitulo:"../../../assets/videos/mrRobot.mp4"
       },
+    
       {
           titulo: "Los Simpsons",
           subtitulo: "Serie, 30 temporadas",

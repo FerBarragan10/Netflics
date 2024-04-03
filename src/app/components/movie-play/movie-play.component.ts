@@ -2,11 +2,12 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FooterComponent } from '../../shared/footer/footer.component';
+import { CardsFavoritosComponent } from '../../shared/cards-favoritos/cards-favoritos.component';
 
 @Component({
   selector: 'app-movie-play',
   standalone: true,
-  imports: [NavbarComponent,FooterComponent],
+  imports: [NavbarComponent,FooterComponent,CardsFavoritosComponent],
   templateUrl: './movie-play.component.html',
   styleUrl: './movie-play.component.scss'
 })

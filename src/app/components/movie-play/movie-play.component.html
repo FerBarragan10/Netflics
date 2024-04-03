@@ -2,7 +2,7 @@
   <app-navbar></app-navbar>
 </div>
 
-<div (click)="irAtras()" style="z-index: 1000;position: absolute; top: 4rem; left: 12rem; display: flex; align-items: center;">
+<div (click)="irAtras()" style="z-index: 1000;position: absolute; top: 4rem; left: 26rem; display: flex; align-items: center;">
   
   <button >
     <svg  (click)="irAtras()" style="display: inline-block; transform: rotate(270deg);" height="100%" width="20" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,11 +25,9 @@
       <source src="{{capitulo}}" type="video/mp4">
     }
   </video>   
-</div>
-
- <!-- <div style=" display:flex;position:absolute;margin-top: 36rem;">
+  <div style=" display:flex;position:absolute;margin-top: 33rem;">
     <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <rect width="60" height="60" fill="url(#pat)"/>
+      <rect width="40" height="40" fill="url(#pat)"/>
       <defs>
       <pattern id="pat" patternContentUnits="objectBoundingBox" width="1" height="1">
       <use xlink:href="#image0_174_749" transform="scale(0.0111111)"/>
@@ -38,7 +36,7 @@
       </defs>
       </svg>
       <svg width="90" height="90" (click)="adelantar()" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <rect width="60" height="60" fill="url(#pat1)"/>
+        <rect width="40" height="40" fill="url(#pat1)"/>
         <defs>
         <pattern id="pat1" patternContentUnits="objectBoundingBox" width="1" height="1">
         <use xlink:href="#image0_174_748" transform="scale(0.0111111)"/>
@@ -47,7 +45,7 @@
         </defs>
         </svg>
         <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect width="60" height="60" fill="url(#pat2)"/>
+          <rect width="40" height="40" fill="url(#pat2)"/>
           <defs>
           <pattern id="pat2" patternContentUnits="objectBoundingBox" width="1" height="1">
           <use xlink:href="#image0_174_750" transform="scale(0.0111111)"/>
@@ -57,7 +55,7 @@
           </svg>
           
           <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="60" height="60" fill="url(#pat3)"/>
+            <rect width="40" height="40" fill="url(#pat3)"/>
             <defs>
             <pattern id="pat3" patternContentUnits="objectBoundingBox" width="1" height="1">
             <use xlink:href="#image0_174_751" transform="scale(0.0111111)"/>
@@ -66,7 +64,7 @@
             </defs>
             </svg>
             <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect width="60" height="60" fill="url(#pat4)"/>
+              <rect width="40" height="40" fill="url(#pat4)"/>
               <defs>
               <pattern id="pat4" patternContentUnits="objectBoundingBox" width="1" height="1">
               <use xlink:href="#image0_174_752" transform="scale(0.0111111)"/>
@@ -76,8 +74,11 @@
               </svg>
               
       
-  </div>-->
+  </div>
  
-    
+</div>
+
+  <h3 class="mt-10 py-2"style="top:4rem;color:#ffffff;font-size:30px;">Recomendados</h3>
+<app-cards-favoritos></app-cards-favoritos>
 
   <app-footer></app-footer>
