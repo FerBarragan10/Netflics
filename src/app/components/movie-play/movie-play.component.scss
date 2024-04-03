@@ -2,13 +2,15 @@ video{
     height: auto;
     width: 100%;
 }
-
-  
+.main-container {
+    min-height: 100vh; 
+  position: relative; 
+}
   app-footer {
-    position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
-    left: 0; /* Alinea el footer a la izquierda */
-    bottom: 0; /* Alinea el footer en la parte inferior */
-    width: 100%; /* Establece el ancho del footer al 100% del contenedor principal */
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
     
-    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+    z-index: 1000; 
   }

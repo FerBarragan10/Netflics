@@ -16,7 +16,7 @@
 </div>
 
 
-<div style="margin-top: 4rem;" class="flex justify-center items-center ">
+<div style="margin-top: 4rem;overflow-x: hidden;" class="flex justify-center items-center ">
   <video controls class="" #videoplayer style="width: 100%; height:40rem;">
     @if(esTrailer){
       <source src="{{trailer}}"  type="video/mp4">
@@ -78,7 +78,7 @@
  
 </div>
 
-  <h3 class="mt-10 py-2"style="top:4rem;color:#ffffff;font-size:30px;">Recomendados</h3>
+  <h3 class="mt-10 py-2 px-5"style="top:4rem;color:#ffffff;font-size:30px;">Recomendados</h3>
 <app-cards-favoritos></app-cards-favoritos>
 
   <app-footer></app-footer>
